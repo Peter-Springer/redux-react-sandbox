@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-  render() {
+const Header = ({ Click, data }) => {
     return (
       <div>
-      <h1>HEADER</h1>
+      <h1 onClick={() => Click()}>Click Me</h1>
+      <h1>{data}</h1>
       </div>
     )
-  }
 }
 
 export default Header;
